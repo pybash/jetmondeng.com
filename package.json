@@ -1,0 +1,26 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "updatepackages": "npm i && cd website-react && npm i",
+
+    "build_server": "npm i && tsc",
+    "build_react": "cd website-react && npm i && npm run build",
+    "build": "npm run build_server && npm run build_react",
+
+    "server": "npm run build_server && node ./App.js",
+    "bar": "npm run build && npm run server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/pg": "^8.11.10"
+  }
+}

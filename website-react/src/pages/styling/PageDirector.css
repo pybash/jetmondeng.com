@@ -1,0 +1,7 @@
+.page-director-container {
+    position: absolute;
+    left: var(--navbar-size);
+    width: calc(100% - var(--navbar-size));
+    height: 100%;
+    background-color: var(--page-background);
+}

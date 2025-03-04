@@ -1,0 +1,56 @@
+.nav-bar-container {
+    position:fixed;
+    top:0;
+    left:0;
+    width: var(--navbar-size);
+    height: 100%;
+    background-color: var(--primary-color);
+    border-right: 1px solid var(--secondary-color);
+    
+    box-sizing: border-box;
+    padding: 10px 5px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.myName {
+    font-size: 17px;
+    text-align: left;
+    width: 85%;
+}
+
+.button {
+    width: 85%;
+    box-sizing: border-box;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px 0;
+    display: flex;
+    text-decoration: none !important;
+    color: var(--text-color)
+}
+.button:hover {
+    background-color: rgb(220,220,220);
+}
+.selected {
+    background-color: var(--select-color) !important;
+    color: var(--select-text-color);
+    font-weight: 600;
+}
+
+.subHeader {
+    width: 85%;
+    font-size: 15px;
+    color: gray;
+    font-weight: 500;
+}
+.button img {
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+    border-radius: 5px;
+}

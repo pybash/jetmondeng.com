@@ -1,0 +1,46 @@
+.postRoot {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.postContainer {
+    width: 40%;
+    height: 100%;
+}
+
+.blue {
+    color: rgb(86, 151, 255)
+}
+.rit {
+    color: #F76902;
+}
+.bold {
+    font-weight: bold;
+}
+.nodecoration {
+    text-decoration: none !important;
+}
+
+
+.subtitle {
+    color: rgb(132, 132, 132);
+    font-weight: normal;
+    font-size: 20px;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.codeSnippet {
+    background-color: rgb(237, 237, 237);
+    display: block;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
+}
+.headshot {
+    width: 100px;
+    height: 100px;
+}

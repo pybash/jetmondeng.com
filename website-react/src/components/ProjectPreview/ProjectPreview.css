@@ -1,0 +1,24 @@
+.projectPreviewImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.projectPreviewDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.previewContainer h3 {
+    margin:0;
+    padding: 0;
+}
+
+.previewContainer p {
+    margin:0;
+    padding: 0;
+    color: rgba(0,0,0,0.5);
+}
+.previewText {
+    padding: 0;
+    margin:0
+}

@@ -1,0 +1,16 @@
+.default-theme {
+  --primary-color: rgba(246,246,246);
+  --secondary-color: rgba(0, 0, 0, 0.173);
+  --page-background: rgb(255, 255, 255);
+  --select-color: rgb(0,0,0);
+  --select-text-color: rgb(255,255,255);
+  --text-color: rgb(0,0,0);
+
+  --navbar-size: 250px;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
