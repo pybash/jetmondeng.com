@@ -1,0 +1,12 @@
+# Remove the config folder that includes a db.yml
+/config
+config/
+
+# Remove node modules from being added
+/node_modules
+node_modules/*
+
+# Remove any server builds from being tracked or added
+App.js
+API
+API/*
