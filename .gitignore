@@ -8,5 +8,5 @@ node_modules/*
 
 # Remove any server builds from being tracked or added
 App.js
-API
-API/*
+./API
+./API/*
