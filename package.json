@@ -5,11 +5,9 @@
   "main": "App.js",
   "scripts": {
     "updatepackages": "npm i && cd website-react && npm i",
-
     "build_server": "npm i && tsc",
-    "build_react": "cd website-react && npm i && npm run build",
+    "build_react": "cd website-react && npm i --force && npm run build",
     "build": "npm run build_server && npm run build_react",
-
     "server": "npm run build_server && node ./App.js",
     "bar": "npm run build && npm run server"
   },
@@ -17,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
-    "pg": "^8.13.1"
+    "pg": "^8.13.3"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",

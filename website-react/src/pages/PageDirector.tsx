@@ -18,6 +18,7 @@ class PageDirector extends Component {
                         <Route path="/" element={<Home />} />
                         <Route path="/contacts" element={<Contact />} />
                         <Route path="/books" element={<Books />} />
+                        <Route path="/api/*" element={null} />
                     </Routes>
                 </Router>
             </div>
