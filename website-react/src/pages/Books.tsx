@@ -22,18 +22,17 @@ class Books extends Component<{}, MyState> {
         super(props);
 
         this.state = {
-            booklist: placeholderBooks
+            booklist: []
         }
 
-        // fetch("/api/getPosts")
-        //     .then((res) => res.json())
-        //     .then((res) => {
-        //     this.setState({
-        //         booklist: res
-        //     })
-        //     console.log(res)
-        // })
-        console.log(this.state.booklist)
+        fetch("/api/getPosts")
+            .then((res) => res.json())
+            .then((res) => {
+            this.setState({
+                booklist: res
+            })
+        })
+        
     }
 
     render(): ReactNode {

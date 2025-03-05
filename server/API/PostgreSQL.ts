@@ -16,20 +16,22 @@ export class PostgreSQLCommunicator {
         );
     }
 
-    public async exec_get_all(query: string, params: string[]): Promise<pg.QueryArrayResult<any[]>> {
+    public async exec_get_all(query: string, params: string[]): Promise<pg.QueryArrayResult<any>> {
         console.log("connect")
         if(!this.connected) {
             await this.client.connect();
             this.connected = true;
         }
         console.log("getting response")
-        let response;
-        if(params.length > 0) {
-            response = await this.client.query(query, params);
-        } else {
-            response = await this.client.query(query);
+
+        let queryconfig = {
+            text: query,
+            values: params
         }
+
+        let response = await this.client.query(queryconfig);
         console.log("return response")
+        console.log(response)
         return response;
     }
 }

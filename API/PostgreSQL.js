@@ -29,14 +29,13 @@ class PostgreSQLCommunicator {
                 this.connected = true;
             }
             console.log("getting response");
-            let response;
-            if (params.length > 0) {
-                response = yield this.client.query(query, params);
-            }
-            else {
-                response = yield this.client.query(query);
-            }
+            let queryconfig = {
+                text: query,
+                values: params
+            };
+            let response = yield this.client.query(queryconfig);
             console.log("return response");
+            console.log(response);
             return response;
         });
     }

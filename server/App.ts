@@ -25,8 +25,7 @@ app.get("/api", (req:  Request, res: Response) => {
 
 app.get("/api/getposts", (req:  Request, res: Response) => {
     console.log("Hello")
-    psql.exec_get_all("SELECT (bookname, rating, review, bookimage, author) from book_reviews;", []).then((response) => {
-        console.log("Hello")
+    psql.exec_get_all("SELECT bookName, rating, review, bookimage, author from book_reviews;", []).then((response) => {
         res.status(200).send(response.rows);  
     }).catch((err) => {
         res.status(500)
