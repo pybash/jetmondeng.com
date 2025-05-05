@@ -1,7 +1,18 @@
+@media screen and (max-width: 700px) {
+    .page-director-container {
+        left:0;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 700px) {
+    .page-director-container {
+        width: calc(100% - var(--navbar-size));
+        left: var(--navbar-size);
+    }
+}
 .page-director-container {
     position: absolute;
-    left: var(--navbar-size);
-    width: calc(100% - var(--navbar-size));
+    
     height: 100%;
     background-color: var(--page-background);
 }

@@ -5,6 +5,7 @@
   --select-color: rgb(0,0,0);
   --select-text-color: rgb(255,255,255);
   --text-color: rgb(0,0,0);
+  --mobile-screen-adjustment: 700px;
 
   --navbar-size: 250px;
 }
