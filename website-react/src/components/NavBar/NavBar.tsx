@@ -51,6 +51,8 @@ class NavBar extends Component<{}, { enabledMobileDropdown: boolean }> {
                     <a className={"button"} href="/">🏡 Home</a>
                     <a className={"button"} href="/contacts">✉️ Contact</a>
                     <a className={"button "} href="/books">📚 Reads</a>
+                    <a className={"button"} href="/blog">📣 Blog</a>
+
                     <a className={"button"} href="/Resume.pdf">📋 Resume</a>
                     <h3 className="subHeader">Projects</h3>
                     {
@@ -66,6 +68,7 @@ class NavBar extends Component<{}, { enabledMobileDropdown: boolean }> {
                     <a className={"button " + (pN == "/" ? "selected" : "")} href="/">🏡 Home</a>
                     <a className={"button " + (pN == "/contacts" ? "selected" : "")} href="/contacts">✉️ Contact</a>
                     <a className={"button " + (pN == "/books" ? "selected" : "")} href="/books">📚 Reads</a>
+                    <a className={"button " + (pN.startsWith("/post/") || pN.startsWith("/blog") ? "selected" : "")} href="/blog">📣 Blog</a>
                     <a className={"button"} href="/Resume.pdf">📋 Resume</a>
                     <h3 className="subHeader">Projects</h3>
                     {

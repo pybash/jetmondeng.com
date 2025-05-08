@@ -10,6 +10,11 @@
   --navbar-size: 250px;
 }
 
+@font-face {
+  font-family: "Roboto Mono";
+  src: url('../public/roboto-font/RobotoMono-Regular.ttf');
+}
+
 .App {
   display: flex;
   height: 100vh;

@@ -8,6 +8,8 @@ import './styling/PageDirector.css'
 import Home from "./Home";
 import Contact from "./Contact";
 import Books from "./Books";
+import Post from "./post/Post";
+import BlogHome from "./BlogHome";
 
 class PageDirector extends Component {
     render() {
@@ -19,6 +21,8 @@ class PageDirector extends Component {
                         <Route path="/contacts" element={<Contact />} />
                         <Route path="/books" element={<Books />} />
                         <Route path="/api/*" element={null} />
+                        <Route path="/blog" element={<BlogHome />} />
+                        <Route path="/blog/*" element={<Post />} />
                     </Routes>
                 </Router>
             </div>
