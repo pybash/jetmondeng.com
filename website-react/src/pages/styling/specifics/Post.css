@@ -51,6 +51,7 @@
     height: 420px;
     border-radius: 7px;
     object-fit: cover;
+    margin: 10px 0;
 }
 .blog-end-sep {
     width: 100%;

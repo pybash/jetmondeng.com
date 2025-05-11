@@ -25,7 +25,7 @@ class Books extends Component<{}, MyState> {
             booklist: []
         }
 
-        fetch("/api/getPosts")
+        fetch("/api/getbooks")
             .then((res) => res.json())
             .then((res) => {
             this.setState({

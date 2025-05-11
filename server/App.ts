@@ -14,7 +14,7 @@ app.use(express.static(__dirname + "/website-react/build"))
 
 // Declared routes that are used in ReactJS' Router
 // Other solutions were thrown around (e.g StackOverflow #52334591, #54282344, but this was the more simpler option)
-const routes = ["", "contacts", "books"]
+const routes = ["", "contacts", "books", "blog*"]
 router.toRoute(routes);
 
 app.get("/api", (req:  Request, res: Response) => {
@@ -23,12 +23,21 @@ app.get("/api", (req:  Request, res: Response) => {
     })
 })
 
-app.get("/api/getposts", (req:  Request, res: Response) => {
+app.get("/api/getbooks", (req:  Request, res: Response) => {
     console.log("Hello")
     psql.exec_get_all("SELECT bookName, rating, review, bookimage, author from book_reviews;", []).then((response) => {
         res.status(200).send(response.rows);  
     }).catch((err) => {
         res.status(500)
+    })
+})
+
+app.get("/api/getpostpreviews", (req: Request, res: Response) => {
+    console.log("getpostpreviews");
+    psql.exec_get_all("SELECT (id, title, description, previewimage, tag) from posts;", []).then((response) => {
+        res.status(200).send(response.rows);
+    }).catch((err) => {
+        res.status(500);
     })
 })
 

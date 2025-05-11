@@ -28,9 +28,9 @@ class Post extends Component<{}, {}> {
                     {
                         (
                             <div className="blog-contents"> 
-                                <img src="https://github.com/ThatBoiLukas/amber/blob/main/images/ocean.png?raw=true" className="postBanner"/>
-                                <p>...you heard that right!</p>
-                                <p>This is my first blog, and my first post! This will be where I will making posts about what I am working on and more!</p>
+                                <img src="/post_images/image.png" className="postBanner"/>
+                                <h3>The grand release!</h3>   
+                                <p>Welcome to my blog, where I will be posting live updates from my life!</p>
                             </div>
                         )
                     }
